@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="calculadora">
+        <input class="entrada-datos">
+        <div class="contenido">
+            <div class="erase">
+                <button class="borrar" onclick="limpiar()">c</button>
+            </div>
+            <div class="inferior">
+                <button onclick="obtenerNumero('*')">x</button>
+                <button onclick="obtenerNumero('7')">7</button>
+                <button onclick="obtenerNumero('8')">8</button>
+                <button onclick="obtenerNumero('9')">9</button>
+                
+            </div>
+           
+            <div class="inferior">
+                <button onclick="obtenerNumero('/')">/</button>
+                <button onclick="obtenerNumero('4')">4</button>
+                <button onclick="obtenerNumero('5')">5</button>
+                <button onclick="obtenerNumero('6')">6</button>
+            </div>
+            <div class="inferior">
+                
+                <button onclick="obtenerNumero('-')">-</button>
+                <button onclick="obtenerNumero('1')">1</button>
+                <button onclick="obtenerNumero('2')">2</button>
+                <button onclick="obtenerNumero('3')">3</button>
+            </div>
+            <div class="inferior">
+                <button onclick="obtenerNumero('+')">+</button>
+                <button onclick="obtenerNumero('.')">.</button>
+
+                <button onclick="obtenerNumero('0')">0</button>
+                <button onclick="calcular()">=</button>
+
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
