@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+.menu-superior{
+    padding: 10px;
+    padding-bottom: 0;
+    cursor: pointer;
+}
+ul > li{
+    display: flex;
+    gap: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    position: relative;
+}
+ul > li::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: white;
+    transition: width 300ms ease;
+}
+ul > li:hover:after{
+    width: 100%;
+}
+body{
+    height: 100vh;
+    width: 100%;
+}
+.menu-lateral{
+    /* border: 1px solid rebeccapurple; */
+    height: 100vh;
+    width: 150px;
+    background-color: rgb(27, 0, 3);
+    color: white;
+    transition: all 300ms ease;
+}
+.menu-lateral.cerrado{
+    width: 39px;
+    overflow: hidden;
+}
+ion-icon{
+    /* border: 1px solid red; */
+    min-width: 20px;
+}
+.contenido{
+    position: absolute;
+    top: 0;
+    left: 150px;
+    padding-left: 10px;
+    transition: 300ms ease;
+}
+.contenido.pequeño{
+    left: 39px;
+}
