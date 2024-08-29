@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+body{
+    border: 1px solid red;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.contenedor{
+    width: 200px;
+    height: 100px;
+    border: 1px solid blue;
+    border-radius: 10px;
+    display: flex;
+}
+.con-1{
+    /* border: 1px solid yellow; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.con-2{
+    /* border: 1px solid fuchsia; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.t-1{
+    font-size: 20px;
+}
+.t-2{
+    font-size: 20px;
+    border: 1px solid red;
+    padding: 20px;
+    border-radius: 50px;
+}
+.progresion{
+    width: 75px;
+    height: 10px;
+    border: 1px solid pink;
+    border-radius: 10px;
+}
+.medida{
+    border-radius: 10px;
+    height: 100%;
+    width: 10%;
+    background-color: brown;
+    transition: all 300ms ease;
+}
+
+.c-entrada{
+    /* border: 1px solid black; */
+    width: 200px;
+}
+input{
+    width: 160px;
+}
+.entrada{
+    display:flex;
+}
+button{
+    width: 100%;
+    border: none;
+}
+.c-list{
+    width: 200px;
+    height: 200px;
+    /* border: 1px solid black; */
+}
+ul{
+    list-style: none;
+    padding: 0 !important;
+}
+li{
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+    border-bottom: 1px dashed black;
+    padding-bottom: 5px;
+    display: flex;
+    padding-left: 10px;
+    justify-content: spac;
+}
+
+.c-input > input{
+    width: auto;
+}
+.c-list-2{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+.c-input.completed{
+    text-decoration: line-through;
+}
